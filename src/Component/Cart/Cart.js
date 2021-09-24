@@ -3,6 +3,7 @@ import './Cart.css';
 const Cart = (props) => {
     const {cart} = props;
     let total = 0;
+    console.log(cart);
     for(const product of cart){
         total = total+ product.price;
     }
